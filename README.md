@@ -1,5 +1,11 @@
 # Day 11 — Controlled Agent Security (2026)
 
+## Thông tin học viên
+
+- Họ tên: Nguyen Minh Thai
+- MSSV: 2A202602726
+- Repository: [K4-L3-DAY11-NguyenMinhThai-2A202602726-Guardrails-HITL-Responsible-AI](https://github.com/aoi36/K4-L3-DAY11-NguyenMinhThai-2A202602726-Guardrails-HITL-Responsible-AI)
+
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** xây **Blue** (phòng thủ), rồi red-team **Red** + **Red Advance**.  
 > ✅ Làm theo **Checkpoint 1 → 5** trong [`CHECKPOINTS.md`](CHECKPOINTS.md) · nộp theo [`SUBMISSION.md`](SUBMISSION.md).
@@ -132,5 +138,15 @@ pip install -r requirements.txt
 
 Điền `.env`: `OPENROUTER_API_KEY` + `RED_TEAM_PROVIDER=openai|gemini` (và key tương ứng).  
 Rồi mở [`CHECKPOINTS.md`](CHECKPOINTS.md) và làm lần lượt Checkpoint 1 → 5.
+
+### Lệnh chạy nhanh (Windows PowerShell)
+
+```powershell
+.\.venv\Scripts\python.exe src/main.py --part 2
+.\.venv\Scripts\python.exe src/main.py --part 3
+.\.venv\Scripts\python.exe src/main.py --part 4
+.\.venv\Scripts\python.exe -m pytest tests/smoke -q
+.\.venv\Scripts\python.exe -m pytest tests/public -q
+```
 
 Nộp theo [`SUBMISSION.md`](SUBMISSION.md) · Quy định: [`RULES.md`](RULES.md).
